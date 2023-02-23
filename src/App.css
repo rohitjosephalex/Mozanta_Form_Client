@@ -1,0 +1,98 @@
+body {
+  font-family: Arial
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.components {
+  flex-grow: 1;
+  flex-basis: 0;
+  margin-right: 13px;
+  margin-left: 13px;
+}
+
+input {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+label {
+  text-align: left;
+  display: block;
+}
+
+.align-center {
+  margin-top: 27px;
+  text-align: center;
+}
+
+.redColor {
+  color: red;
+  font-size: small;
+}
+
+button {
+  background: #3567f1;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+}
+
+thead {
+  text-align: left;
+}
+
+h1 {
+  text-align: center;
+}
+
+.remove-padding-top {
+  padding-top: 0px;
+}
+
+th {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 7px;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column;
+  }
+
+  .components {
+    margin-bottom: 40px;
+  }
+}
