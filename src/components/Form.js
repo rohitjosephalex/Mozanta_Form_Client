@@ -115,18 +115,26 @@ export const Form = () => {
                                 : ""}
                         </span>
                     </div>
-                    <div>
+                    <div  >
                         <label>Gender</label>
-                        <select name="gender" onChange={form.handleChangeEvent}>
-                            <option></option>
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                        </select>
+                        {/* <select name="gender" onChange={form.handleChangeEvent}> */}
+                            {/* <option></option> */}
+                            {/* <option value="Male">Male</option>
+                            <option value="Female">Female</option> */}
+                        {/* </select> */}
+                        <div className="gender">
+                        <div className="male">
+                        <input type="radio" value="Male" name="gender" onChange={form.handleChangeEvent}/> Male
+                        </div>
+                        <div className="female">
+                        <input  type="radio" value="Female" name="gender" onChange={form.handleChangeEvent}/> Female
+                        </div>
                         <span className="error redColor">
                             {errors.gender
                                 ? errors.gender
                                 : ""}
                         </span>
+                        </div>
                     </div>
                     <div className="align-center">
                         <button type="submit">Submit</button>
