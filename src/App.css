@@ -4,7 +4,7 @@ body {
 
 .App {
   display: flex;
-  flex-direction: row;
+  flex-direction:row;
 }
 
 
@@ -47,7 +47,18 @@ label {
   color: red;
   font-size: small;
 }
+.gender{
+  display:flex;
+  font-size: smaller;
+}
 
+
+.female{
+  margin-left: 50px;
+}
+.male{
+  margin-left: 10px;
+}
 button {
   background: #3567f1;
   color: #fff;
